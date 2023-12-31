@@ -2,10 +2,10 @@
 
 import {useRouter} from 'next/navigation'
 
-export default function DetailLink(){
+export default function DetailLink(props){
   let router = useRouter()
   return (
-    <button onClick={()=>{ router.push('/') }}>button</button>
+    <button onClick={()=>{ router.push('/detail/' + props.id) }}>Go</button>
     // router.back(), router.forward(), router.prefetch and router.refresh()
   )
 }
