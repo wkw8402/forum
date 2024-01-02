@@ -12,8 +12,24 @@ export default function ListItem({result}){
                     <Link href={'/detail/' + result[i]._id}><h4>{a.title}</h4></Link>
                     <Link href={'/edit/' + result[i]._id} className="list-btn">✏️</Link>
                     {/* <DetailLink id={a._id}/> */}
-                    <span onClick={()=>{
+                    <span onClick={(e)=>{
+
+                        // ajax
                         fetch('/api/post/delete', {method : 'DELETE', body : result[i]._id})
+                        .then((r) => r.json())
+                        .then(() => {
+                            e.target.parentElement.style.opacity = 0;
+                            setTimeout(()=>{
+                                e.target.parentElement.style.display = 'none'
+                            }, 1000)
+                        })
+                        
+                        // query string or search parameter
+                        // fetch('/api/test?name=malkin&age=20')
+                        
+                        // url parameter
+                        // fetch('/api/abc/pop')
+                        
                     }}>🗑️</span>
                     {/* fetch('/URL') makes a GET request */}
                     {/* <form> request always refreshes but ajax request doesn't */}

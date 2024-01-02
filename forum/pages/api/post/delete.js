@@ -3,26 +3,11 @@ import { ObjectId } from "mongodb";
 
 export default async function handler(request, response) {
   if (request.method == 'DELETE'){
-    try {
+      console.log(request.body)
       let db = (await connectDB).db('forum') 
       let result = await db.collection('post').deleteOne({_id : new ObjectId(request.body)})
-      .then((r)=>{
-        if(r.status == 200) {
-          return r.json()
-        } else {
-          //code to execute if server sends error code
-        }
-      })
-      .then((result)=>{ 
-        //code to execute if successful
-      }).catch((error)=>{
-        //code to execute if failed due to network problem
-        console.log(error)
-      })
-    } 
-    catch (error) {
-      response.status(500)
-    }
+      
+      response.status(200).json('delete complete')
     // if result is error, response.status(500)
     // otherwise, response.status(200)
   }
