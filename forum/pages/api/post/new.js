@@ -6,9 +6,9 @@ export default async function handler(request, response){
     let session = await getServerSession(request, response, authOptions)
     console.log(session)
 
-    // adding author attribute to a new post
     if (session) {
-        request.body.author = session.user.email
+        console.log(session)
+        request.body.author = session.user.name
     }
 
     if (request.method == 'POST') {

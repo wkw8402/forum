@@ -1,5 +1,6 @@
 import { connectDB } from "@/util/database";
 import { ObjectId } from "mongodb";
+import Comment from "./Comment";
 
 export default async function Detail(props) {
     let db = (await connectDB).db('forum')
@@ -7,10 +8,11 @@ export default async function Detail(props) {
     console.log(result)
 
     return (
-      <div>
+      <div style={{ backgroundColor: '#f0f0f0', padding: '20px' }}>
         <h4>Detail page</h4>
         <h4>{result.title}</h4>
         <p>{result.content}</p>
+        <Comment _id={result._id.toString()} />
       </div>
     )
 }
