@@ -1,6 +1,16 @@
 import { connectDB } from "@/util/database";
+import { getServerSession } from "next-auth";
+import { authOptions } from "../auth/[...nextauth]";
 
 export default async function handler(request, response){
+    let session = await getServerSession(request, response, authOptions)
+    console.log(session)
+
+    // adding author attribute to a new post
+    if (session) {
+        request.body.author = session.user.email
+    }
+
     if (request.method == 'POST') {
         console.log(request.body)
         if (request.body.title == '') {
