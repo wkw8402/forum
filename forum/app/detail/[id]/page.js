@@ -14,7 +14,7 @@ export default async function Detail(props) {
     // error and not-found can be loaded from parent directory
 
     return (
-      <div style={{ backgroundColor: '#f0f0f0', padding: '20px' }}>
+      <div style={{ backgroundColor: '#f7f7f7', padding: '20px' }}>
         <h4>Detail page</h4>
         <h4>{result.title}</h4>
         <p>{result.content}</p>
