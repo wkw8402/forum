@@ -8,7 +8,7 @@ export default async function handler(request, response){
 
     if (session) {
         console.log(session)
-        request.body.author = session.user.name
+        request.body.author = session.user.email
     }
 
     if (request.method == 'POST') {
