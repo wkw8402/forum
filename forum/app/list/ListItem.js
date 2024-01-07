@@ -30,7 +30,19 @@ export default function ListItem({result}){
                         // url parameter
                         // fetch('/api/abc/pop')
                         
-                    }}>🗑️</span>
+                    }}
+                    style={{
+                        cursor: 'pointer',    // Changes the cursor to signify a clickable item
+                        display: 'inline-block',
+                        padding: '5px',
+                        borderRadius: '50%',   // Optional: Adds a circular background on hover
+                        transition: 'background-color 0.3s',  // Smooth transition for hover effect
+                        userSelect: 'none',    // Prevents text selection on double click
+                      }}
+                      onMouseOver={(e) => e.target.style.backgroundColor = '#f0f0f0'}  // Optional: Changes background color on hover
+                      onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'} // Reverts the background color when not hovered
+
+                    >🗑️</span>
                     {/* fetch('/URL') makes a GET request */}
                     {/* <form> request always refreshes but ajax request doesn't */}
                     {/* JSON = {name: 'crack'} -> '{"name": "creack"}' = is needed to send array or object to server */}
