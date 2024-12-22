@@ -56,3 +56,9 @@ a {
   opacity: 1;
   transition: all 1s;
 } 
+.dark-mode .navbar {
+  background: #222;
+}
+.dark-mode .navbar a {
+  color: white;
+} 
