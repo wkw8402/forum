@@ -33,7 +33,7 @@ export default async function RootLayout({ children }) {
           <Link href="/list">List</Link> 
           { 
             session 
-              ? <span>{session.user.name} <LogOutBtn/> </span> 
+              ? <a>{session.user.name} <LogOutBtn/> </a> 
               : <LoginBtn/>
           }
           <DarkMode/>
