@@ -4,7 +4,7 @@
 This project is a comprehensive forum application developed using Next.js and MongoDB. It encompasses a wide range of functionalities including user authentication, post creation, editing, deletion, and comment management. The application also features dynamic rendering techniques and incorporates advanced features like JWT, OAuth, and dark mode. 
 
 ## Project Demo
-![Project Demo](/forum/public/demo.mov)
+[![Watch the video](https://img.youtube.com/vi/YADtH78KfpE/maxresdefault.jpg)](https://youtu.be/YADtH78KfpE)
 
 ## Implementation Steps
 
