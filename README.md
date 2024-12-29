@@ -23,11 +23,9 @@ This project is a comprehensive forum application developed using Next.js and Mo
 13. **User Features - ID/Password Authentication with JWT**: Secure authentication using JWT, including refresh token strategies.
 14. **Comment Feature Development**: A series of steps for implementing a comment system.
 15. **Handling Loading, Error, and Not-Found Scenarios**: Developing responsive UI for various user interface states.
-16. **Deployment on AWS Elastic Beanstalk**: Steps for deploying the Next.js server on AWS Elastic Beanstalk.
-17. **Image Upload Feature**: Implementing image upload functionality with AWS S3 setup and Presigned URL.
-18. **Dark Mode Feature Implementation**: Adding dark mode feature using cookies and localStorage.
-19. **Using Middleware for Server Function Interception**: Understanding and applying middleware for additional server functionality.
-20. **Exploring Server Actions in Next.js**: A deep dive into the server actions capabilities of Next.js.
+16. **Dark Mode Feature Implementation**: Adding dark mode feature using cookies and localStorage.
+17. **Using Middleware for Server Function Interception**: Understanding and applying middleware for additional server functionality.
+18. **Exploring Server Actions in Next.js**: A deep dive into the server actions capabilities of Next.js.
 
 ## Conclusion
 This project showcases a full-stack development experience using modern web technologies and is a testament to the versatility and power of Next.js combined with MongoDB. It serves as a practical guide to building and deploying a feature-rich forum application.
