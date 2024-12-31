@@ -96,7 +96,7 @@ This project was developed following a systematic approach:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. The codebase is derived from [this course](https://codingapple.com/course/next-js/).
 
 ## Conclusion
 
